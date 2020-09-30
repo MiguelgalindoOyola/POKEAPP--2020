@@ -1,0 +1,66 @@
+
+<style type="text/css">
+  .card {
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(84, 96, 105);
+    border-radius:100px;
+}
+.card-h {
+    width: 240px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(84, 96, 105);
+    border-radius:150px;
+    border:10px solid #666;
+    text-align: center;
+}
+.descrip{
+  width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(84, 96, 105);
+    border-radius:150px;
+    border:5px solid #666;
+    text-align: center;
+}
+.header-image {
+    background-size: cover;
+}
+
+.mat-card-header{
+    background-color: rgb(189, 194, 197);
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.mat-card-title{
+    text-transform: uppercase;
+    color: rgb(8, 19, 20);
+}
+
+.mat-card-subtitle{
+    color: rgb(11, 83, 83);
+}
+  </style>
+
+<mat-card class="card">
+  
+    <mat-card-header class="card-h">
+      <img  mat-card-avatar class="header-image"  src="{{pokemonImg}}"> 
+      <mat-card-title>{{pokemon.name}}</mat-card-title>
+      <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
+    </mat-card-header>
+  
+    <img mat-card-image src="{{pokemonImg}}" alt="pokemon">
+  
+    <mat-card-content class="descrip">
+      <mat-chip-list>
+        <mat-chip color="primary">Clase: {{pokemonType}}</mat-chip>
+        <mat-chip color="primary">Height: {{pokemon.height}}</mat-chip>
+        <mat-chip color="primary">Weight: {{pokemon.weight}}</mat-chip>
+      </mat-chip-list>
+    </mat-card-content>
+  
+  </mat-card>

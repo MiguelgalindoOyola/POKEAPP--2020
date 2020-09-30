@@ -1,0 +1,78 @@
+@import "../../../assets/styles/variables.scss";
+
+.container{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+table{
+    min-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.mat-header-cell{
+    color: rgb(234, 214, 248);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.mat-row:nth-child(odd){
+    background-color: red;
+
+}
+.mat-row:nth-child(even){
+    background-color: rgba(51, 49, 49, 0.897);
+
+}
+.mat-cell::first-letter{ 
+    text-transform: uppercase;
+
+}
+.mat-row:hover{
+    box-shadow: inset 0 0 0 5px rgba(175, 141, 141, 0.897);
+}
+::ng-deep.mat-paginator{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.mat-form-field {
+    font-size: 13px;
+    width: 20%;
+
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+::ng-deep.mat-paginator {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.mat-form-field {
+    font-size: 13px;
+    width: 20%;
+
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+::ng-deep.mat-form-field-label {
+    color: seashell !important;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+::ng-deep.mat-form-field-underline {
+    background-color: seashell !important;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+input {
+    color: seashell !important;
+}
