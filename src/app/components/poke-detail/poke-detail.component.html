@@ -1,38 +1,38 @@
 
+
 <style type="text/css">
   .card {
     width: 350px;
     margin: auto;
     margin-top: 20px;
-    background-color: rgb(84, 96, 105);
-    border-radius:100px;
-}
+    background-color: darkseagreen;
+    
+    }
 .card-h {
-    width: 240px;
+    width: 250px;
     margin: auto;
-    margin-top: 20px;
-    background-color: rgb(84, 96, 105);
-    border-radius:150px;
-    border:10px solid #666;
-    text-align: center;
-}
+    
+    background-color:khaki;
+ 
+       }
 .descrip{
-  width: 300px;
+  width: 350px;
     margin: auto;
     margin-top: 20px;
-    background-color: rgb(84, 96, 105);
-    border-radius:150px;
-    border:5px solid #666;
+    background-color: khaki;
+    border:1px solid turquoise;
     text-align: center;
-}
+    align-content: center;
+  }
+
 .header-image {
     background-size: cover;
 }
 
 .mat-card-header{
-    background-color: rgb(189, 194, 197);
+    background-color:lavender;
     padding-top: 10px;
-    border-radius: 10px;
+   
 }
 
 .mat-card-title{
@@ -49,7 +49,7 @@
   
     <mat-card-header class="card-h">
       <img  mat-card-avatar class="header-image"  src="{{pokemonImg}}"> 
-      <mat-card-title>{{pokemon.name}}</mat-card-title>
+      <mat-card-title><H1>{{pokemon.name}}</H1></mat-card-title>
       <mat-card-subtitle>Nº {{pokemon.id}}</mat-card-subtitle>
     </mat-card-header>
   
@@ -57,9 +57,11 @@
   
     <mat-card-content class="descrip">
       <mat-chip-list>
-        <mat-chip color="primary">Clase: {{pokemonType}}</mat-chip>
-        <mat-chip color="primary">Height: {{pokemon.height}}</mat-chip>
-        <mat-chip color="primary">Weight: {{pokemon.weight}}</mat-chip>
+        <mat-chip color="">Clase: {{pokemonType}}</mat-chip>
+        <mat-chip color="">Height: {{pokemon.height}}</mat-chip>
+        <mat-chip color="">Weight: {{pokemon.weight}}</mat-chip>
+        <mat-chip color="">Habilidad Oculta: {{pokemonAbiliti}}</mat-chip>
+        <mat-chip color="">Habilidad Primaria: {{pokemonAbiliti2}}</mat-chip>
       </mat-chip-list>
     </mat-card-content>
   
